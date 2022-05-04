@@ -1,0 +1,48 @@
+@import url(reset.css);
+/* skill.css */
+
+/* 스크롤바 */
+body::-webkit-scrollbar{width:20px;} 
+body::-webkit-scrollbar-thumb{height:3%;background: #101874;border-radius: 10px;}
+body::-webkit-scrollbar-track{background: #fff;}
+
+#skill{width:100%;height:969px;background: #DBFCFF;}
+.skill_frame{display: flex;flex-direction: column;align-items: center;}
+.frame_upper > ul{display: flex;flex-direction: row;padding-top: 60px;}
+.frame_upper > ul > li{margin-right: 100px;transform-origin: center top;}
+.frame_upper > ul > li:first-child{width:222px;height:275px;background: url(../images/html.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;animation: swing1 1.5s linear 0s infinite alternate;}
+.frame_upper > ul > li:nth-child(2){width:222px;height:275px;background: url(../images/css.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;animation: swing2 1s linear 0s infinite alternate;}
+.frame_upper > ul > li:nth-child(3){width:299px;height:275px;background: url(../images/js.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;animation: swing1 1.2s linear 0s infinite alternate;}
+.frame_upper > ul > li:last-child{width:222px;height:275px;background: url(../images/react.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;margin-right: 0;animation: swing2 1.5s linear 0s infinite alternate;}
+
+.frame_lower > ul{display: flex;flex-direction: row;padding-top: 20px;}
+.frame_lower > ul > li{margin-right: 120px;transform-origin: center top;}
+.frame_lower > ul > li:first-child{width:222px;height:275px;background: url(../images/ps.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;animation: swing2 1.4s linear 0s infinite alternate;}
+.frame_lower > ul > li:nth-child(2){width:222px;height:275px;background: url(../images/ai.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;animation: swing1 1.2s linear 0s infinite alternate;}
+.frame_lower > ul > li:last-child{width:222px;height:275px;background: url(../images/xd.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;animation: swing2 1.6s linear 0s infinite alternate;}
+
+@keyframes swing1 {
+    0%{transform: rotate(3deg);}
+
+    100%{transform: rotate(-3deg);}
+    
+}
+
+@keyframes swing2 {
+    0%{transform: rotate(-3deg);}
+
+    100%{transform: rotate(3deg);}
+    
+}
+
+
+
+.dog{position:relative;left:850px;bottom:40px;z-index:10;display: block;width:248px;height:356px;background: url(../images/tail_ani.png) no-repeat 0 0;animation: tail 1s steps(2,start) 0s infinite;}
+
+@keyframes tail {
+    0%{background-position: 252px 0;}
+    100%{background-position: -248px 0;}
+    
+}
+
+.floor{position:absolute;left:0;bottom:0;width: 100%;height: 98px;background: #CBCBCB;}
