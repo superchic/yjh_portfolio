@@ -87,14 +87,14 @@ window.onload=function(){
     //미완성앱 열었을 때
     const miwanseong  = document.querySelector(".content5 > section > .dustpan");
     miwanseong.onclick = function(){
-        window.open("https://superchic.github.io/miwanseong_app/","invisible","width=375px,height=812px,left=200px,top=20px,scrollbars=no,menubar=no,toolbar=no,location=no,status=no,resizeable=no");
+        window.open("https://superchic.github.io/miwanseong_app/","miwanseong","width=375px,height=812px,left=0,top=0,scrollbars=no,menubar=no,toolbar=no,location=no,status=no,resizeable=no");
     }
 
 
     //리액트 카카오톡 열었을 때
     const kakao  = document.querySelector(".content8 > section > .react");
     kakao.onclick = function(){
-        window.open("https://superchic.github.io/kakao_app/","invisible","width=390px,height=844px,left=200px,top=20px,scrollbars=no,menubar=no,toolbar=no,location=no,status=no,resizeable=no");
+        window.open("https://superchic.github.io/kakao_app/","kakao talk","width=428px,height=926px,left=0,top=0,scrollbars=no,menubar=no,toolbar=no,location=no,status=no,resizeable=no");
     }
 
     //TOP버튼
